@@ -21,6 +21,7 @@ class Udp:
             s.connect((self.IPaddress, self.PORT))
             data2 = data.encode()    
             s.sendall(data2) 
+            s.close()
 
 
 if __name__ == "__main__":

@@ -14,3 +14,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     data = s.recv(1024) # ソケットからデータを受信し、結果を bytes オブジェクトで返します。
                         # 一度に受信するデータは、最大でも bufsize=(1024) で指定した量です。
     print(data)
+
+    s.close()       # 接続を中止

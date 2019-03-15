@@ -16,6 +16,7 @@ class Tcp:
             data2 = s.recv(1024)
             data2 = data2.decode()
             print(data2)
+            s.close()
         return data2
 
 if __name__ == "__main__":

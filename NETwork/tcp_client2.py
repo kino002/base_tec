@@ -16,3 +16,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                         # 一度に受信するデータは、最大でも bufsize=(1024) で指定した量です。
     data2 = data2.decode() # unicode型をstr型に戻す
     print(data2)
+
+    s.close()       # 接続を中止
